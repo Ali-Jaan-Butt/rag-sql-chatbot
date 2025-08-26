@@ -1,0 +1,16 @@
+jupyter
+notebook
+numpy
+pandas
+scikit-learn
+nltk
+transformers
+torch
+gradio
+groq
+langchain-community
+faiss-cpu
+ctransformers
+langdetect
+pdfplumber
+pymysql
