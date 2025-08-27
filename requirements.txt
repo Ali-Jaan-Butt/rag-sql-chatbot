@@ -14,3 +14,4 @@ ctransformers
 langdetect
 pdfplumber
 pymysql
+python-dotenv
