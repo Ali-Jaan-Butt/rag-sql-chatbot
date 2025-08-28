@@ -1,10 +1,10 @@
 from database import mysql_conn
 
 
-class Create_insert_table:
+class Create_tables:
     def __init__(self):
         self.conn, self.cursor = mysql_conn.sql_connection()
-    def create_table_sql(self):
+    def create_table_user(self):
         self.create_table_query = """
         CREATE TABLE IF NOT EXISTS Users (
             user_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -29,3 +29,5 @@ class Create_insert_table:
         """
         self.cursor.execute(self.create_table_query)
         self.conn.commit()
+        print('Table created successfully....')
+        return self.conn, self.cursor

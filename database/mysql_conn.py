@@ -10,8 +10,6 @@ def sql_connection():
     password = os.getenv("DB_PASSWORD")
     db = os.getenv("DB_NAME")
 
-    print("Connecting to:", host, port, db)  # ✅ debug check
-
     conn = pymysql.connect(
         host=host,
         port=port,
